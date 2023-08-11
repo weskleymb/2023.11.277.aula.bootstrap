@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>Cadastro de Clientes</h1>
+        </div>
+        <div class="d-flex justify-content-between">
+            <div class="col-4"> <!-- Espaço do formulario -->
+                <form>
+                    <div class="mb-3">
+                        <label for="nome" class="form-label">Nome:</label>
+                        <input type="text" class="form-control" id="nome">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">E-mail:</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="nascimento" class="form-label">Data de Nascimento:</label>
+                        <input type="date" class="form-control" id="nascimento">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Sexo:</label>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" name="sexo" id="masc" value="m">
+                            <label for="masc" class="form-check-label">Masculino</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" name="sexo" id="fem" value="f">
+                            <label for="fem" class="form-check-label">Feminino</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" name="sexo" id="outro" value="o">
+                            <label for="outro" class="form-check-label">Não opinar</label>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="uf" class="form-label">Estado:</label>
+                        <select name="" id="uf" class="form-select">
+                            <option selected disabled>Selecione o estado...</option>
+                            <option value="rn">Rio Grande do Norte</option>
+                            <option value="pb">Paraíba</option>
+                            <option value="ce">Ceará</option>
+                            <option value="pe">Pernambuco</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-success btn-lg">Cadastrar</button>
+                        <button type="reset" class="btn btn-light btn-lg">Limpar</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-7"> <!-- Espaço da tabela -->
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <th>Nome</th>
+                        <th>E-mail</th>
+                        <th>Estado</th>
+                        <th>Ações</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pedro Gomes</td>
+                            <td>pgomes@uol.com.br</td>
+                            <td>Paraíba</td>
+                            <td>
+                                <a href="#" class="btn btn-primary btn-sm">
+                                    <i class="bi bi-pencil-square"></i>
+                                </a>
+                                <a href="#" class="btn btn-danger btn-sm">
+                                    <i class="bi bi-trash"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Jussara Borges</td>
+                            <td>ju.borges@bol.com.br</td>
+                            <td>Ceará</td>
+                            <td>
+                                <a href="#" class="btn btn-primary btn-sm">
+                                    <i class="bi bi-pencil-square"></i>
+                                </a>
+                                <a href="#" class="btn btn-danger btn-sm">
+                                    <i class="bi bi-trash"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Josefina Andrade</td>
+                            <td>andrade.jos@ig.com.br</td>
+                            <td>Pernambuco</td>
+                            <td>
+                                <a href="#" class="btn btn-primary btn-sm">
+                                    <i class="bi bi-pencil-square"></i>
+                                </a>
+                                <a href="#" class="btn btn-danger btn-sm">
+                                    <i class="bi bi-trash"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Carmem Sandiego</td>
+                            <td>sandiego@yahoo.com.br</td>
+                            <td>Rio Grande do Norte</td>
+                            <td>
+                                <a href="#" class="btn btn-primary btn-sm">
+                                    <i class="bi bi-pencil-square"></i>
+                                </a>
+                                <a href="#" class="btn btn-danger btn-sm">
+                                    <i class="bi bi-trash"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>José Marcus</td>
+                            <td>jm123@msn.com</td>
+                            <td>Rio Grande do Norte</td>
+                            <td>
+                                <a href="#" class="btn btn-primary btn-sm">
+                                    <i class="bi bi-pencil-square"></i>
+                                </a>
+                                <a href="#" class="btn btn-danger btn-sm">
+                                    <i class="bi bi-trash"></i>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Carlota Silva</td>
+                            <td>carlota@avalanche.com</td>
+                            <td>Ceará</td>
+                            <td>
+                                <a href="#" class="btn btn-primary btn-sm">
+                                    <i class="bi bi-pencil-square"></i>
+                                </a>
+                                <a href="#" class="btn btn-danger btn-sm">
+                                    <i class="bi bi-trash"></i>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    
+    
+    
+    
+    
+
+
+    
+</body>
+</html>
